@@ -14,6 +14,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     
     var audioPlayer : AVAudioPlayer!
     var selectedSoundFileName : String = ""
+    // creates array that holds the filename of the note sounds
     let soundArray = ["note1", "note2", "note3", "note4", "note5", "note6", "note7"]
     
     override func viewDidLoad() {
@@ -23,8 +24,8 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     
     
     @IBAction func notePressed(_ sender: UIButton) {
+        // grabs the correct filename extension depending on tag of button
         selectedSoundFileName = soundArray[sender.tag - 1]
-        print(selectedSoundFileName)
         playSound()
     }
     
