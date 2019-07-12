@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AD6F1CCE20EBD3FC00198C34 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AD6F1CCD20EBD3FC00198C34 /* README.md */; };
 		EBB1C7411B9633A60011F5C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB1C7401B9633A60011F5C3 /* AppDelegate.swift */; };
 		EBB1C7431B9633A60011F5C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB1C7421B9633A60011F5C3 /* ViewController.swift */; };
 		EBB1C7461B9633A60011F5C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBB1C7441B9633A60011F5C3 /* Main.storyboard */; };
@@ -16,7 +15,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AD6F1CCD20EBD3FC00198C34 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		EBB1C73B1B9633A60011F5C3 /* Destini.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Destini.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBB1C73F1B9633A60011F5C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBB1C7401B9633A60011F5C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,7 +38,6 @@
 		EBB1C7321B9633A60011F5C3 = {
 			isa = PBXGroup;
 			children = (
-				AD6F1CCD20EBD3FC00198C34 /* README.md */,
 				EBB1C73D1B9633A60011F5C3 /* Destini */,
 				EBB1C73C1B9633A60011F5C3 /* Products */,
 			);
@@ -137,7 +134,6 @@
 			files = (
 				EBB1C7461B9633A60011F5C3 /* Main.storyboard in Resources */,
 				EBB1C74B1B9633A60011F5C3 /* LaunchScreen.xib in Resources */,
-				AD6F1CCE20EBD3FC00198C34 /* README.md in Resources */,
 				EBB1C7481B9633A60011F5C3 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
