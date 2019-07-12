@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  DiceRollerApp
-//
-//  Created by Erick Soto on 7/9/19.
-//  Copyright © 2019 Erick Soto. All rights reserved.
-//
 
 import UIKit
 
