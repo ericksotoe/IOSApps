@@ -15,7 +15,6 @@
 		96191DCF22D7E28400D11685 /* QuestionBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96191DCE22D7E28400D11685 /* QuestionBank.swift */; };
 		96191DD422D7F3EB00D11685 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 96191DD222D7F3EB00D11685 /* ProgressHUD.m */; };
 		96191DD522D7F3EB00D11685 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 96191DD322D7F3EB00D11685 /* ProgressHUD.bundle */; };
-		AD6F1CCC20EBCFF600198C34 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AD6F1CCB20EBCFF600198C34 /* README.md */; };
 		ADEB04ED1FBDFEAA00026359 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 633646C21B8C657400FF45E2 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -33,7 +32,6 @@
 		96191DD122D7F3EB00D11685 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
 		96191DD222D7F3EB00D11685 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
 		96191DD322D7F3EB00D11685 /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
-		AD6F1CCB20EBCFF600198C34 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +48,6 @@
 		633646B01B8C657400FF45E2 = {
 			isa = PBXGroup;
 			children = (
-				AD6F1CCB20EBCFF600198C34 /* README.md */,
 				633646BB1B8C657400FF45E2 /* Quizzler */,
 				633646BA1B8C657400FF45E2 /* Products */,
 			);
@@ -177,7 +174,6 @@
 			files = (
 				ADEB04ED1FBDFEAA00026359 /* Main.storyboard in Resources */,
 				633646C91B8C657400FF45E2 /* LaunchScreen.xib in Resources */,
-				AD6F1CCC20EBCFF600198C34 /* README.md in Resources */,
 				96191DD522D7F3EB00D11685 /* ProgressHUD.bundle in Resources */,
 				633646C61B8C657400FF45E2 /* Images.xcassets in Resources */,
 			);
