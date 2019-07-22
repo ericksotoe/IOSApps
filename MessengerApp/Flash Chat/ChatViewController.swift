@@ -1,11 +1,14 @@
 
 import UIKit
+import Firebase
 
 
-class ChatViewController: UIViewController {
+class ChatViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    
     
     // Declare instance variables here
-
+    
     
     // We've pre-linked the IBOutlets
     @IBOutlet var heightConstraint: NSLayoutConstraint!
@@ -19,22 +22,26 @@ class ChatViewController: UIViewController {
         super.viewDidLoad()
         
         //TODO: Set yourself as the delegate and datasource here:
+        messageTableView.delegate = self
+        messageTableView.dataSource = self
         
         
         
         //TODO: Set yourself as the delegate of the text field here:
-
+        
         
         
         //TODO: Set the tapGesture here:
         
         
-
+        
         //TODO: Register your MessageCell.xib file here:
-
+        messageTableView.register(UINib(nibName: "MessageCell", bundle: nil), forCellReuseIdentifier: "customMessageCell")
+        
+        configureTableView()
         
     }
-
+    
     ///////////////////////////////////////////
     
     //MARK: - TableView DataSource Methods
@@ -42,19 +49,29 @@ class ChatViewController: UIViewController {
     
     
     //TODO: Declare cellForRowAtIndexPath here:
-    
-    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        // setup the  cell specifiing the design and class of cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "customMessageCell", for: indexPath) as! CustomMessageCell
+        let messageArray = ["First message", "second message", "third message"]
+        // setup the message to display
+        cell.messageBody.text = messageArray[indexPath.row]
+        return cell
+    }
     
     //TODO: Declare numberOfRowsInSection here:
-    
-    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
     
     //TODO: Declare tableViewTapped here:
     
     
     
     //TODO: Declare configureTableView here:
-    
+    func configureTableView() {
+        messageTableView.rowHeight = UITableView.automaticDimension
+        messageTableView.estimatedRowHeight = 120.0
+    }
     
     
     ///////////////////////////////////////////
@@ -62,7 +79,7 @@ class ChatViewController: UIViewController {
     //MARK:- TextField Delegate Methods
     
     
-
+    
     
     //TODO: Declare textFieldDidBeginEditing here:
     
@@ -71,7 +88,7 @@ class ChatViewController: UIViewController {
     
     //TODO: Declare textFieldDidEndEditing here:
     
-
+    
     
     ///////////////////////////////////////////
     
@@ -93,17 +110,25 @@ class ChatViewController: UIViewController {
     //TODO: Create the retrieveMessages method here:
     
     
-
+    
     
     
     
     @IBAction func logOutPressed(_ sender: AnyObject) {
+        do {
+            // signs out of firebase db and goes to welcom screen
+            try Auth.auth().signOut()
+            print("logout Successful")
+            navigationController?.popToRootViewController(animated: true)
+        } catch {
+            print("error there was problem signing out")
+        }
         
-        //TODO: Log out the user and send them back to WelcomeViewController
+        
         
         
     }
     
-
-
+    
+    
 }

@@ -25,7 +25,8 @@ class RegisterViewController: UIViewController {
     @IBAction func registerPressed(_ sender: AnyObject) {
         
         // this method allows a new user to be registerd given the email n password
-        Auth.auth().createUser(withEmail: emailTextfield.text!, password: passwordTextfield.text!) { (user, error) in
+        Auth.auth().createUser(withEmail: emailTextfield.text!, password: passwordTextfield.text!) {
+            (user, error) in
             
             // this will print out the error we ran into while registering the user
             if (error != nil) {
@@ -33,7 +34,6 @@ class RegisterViewController: UIViewController {
             }
             else {
                 print("registration Successful!")
-                
                 self.performSegue(withIdentifier: "goToChat", sender: self)
             }
         }
