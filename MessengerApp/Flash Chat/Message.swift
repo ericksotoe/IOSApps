@@ -1,8 +1,9 @@
 
 class Message {
     
-    //TODO: Messages need a messageBody and a sender variable
-    
+    // each message consists of a sender and message body
+    var sender : String = ""
+    var messageBody : String = ""
     
     
 }
